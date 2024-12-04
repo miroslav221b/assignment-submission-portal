@@ -16,7 +16,7 @@ export function CreateAssignment() {
   const assignmentMutation = useMutation({
     mutationKey: ["post-assignment"],
     mutationFn: assignmentApiManager.post,
-    onSuccess(data, variables, context) {
+    onSuccess(data, variables) {
       dispatch(addAssignment(variables));
       router.push("/thanks-you");
     },

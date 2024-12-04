@@ -26,7 +26,7 @@ export default function CandidateLevelSelect({
     <Select {...props}>
       <SelectTrigger className={props.className}>
         {props.value !== undefined ? (
-          <SelectValue placeholder="Candidate level" />
+          <SelectValue placeholder="Candidate level" ref={ref} />
         ) : (
           <div className="w-full" />
         )}
