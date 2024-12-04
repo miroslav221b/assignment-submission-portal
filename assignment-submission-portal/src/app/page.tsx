@@ -1,3 +1,3 @@
-export default function Home() {
-  return <div></div>;
-}
+import { CreateAssignment } from "@/features/assignments/pages/CreateAssignment";
+
+export default CreateAssignment;
