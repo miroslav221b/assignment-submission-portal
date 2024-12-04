@@ -15,7 +15,7 @@ export function AssignmentSuccess() {
   return lastAssignment ? (
     <div className="h-screen w-screen grid">
       <div className="text-center items-center sm:items-start sm:text-left  place-self-start sm:place-self-center flex flex-col  gap-5 p-20 pt-[20px]">
-        <h1 className="text-[30px] leading-[30px] sm:text-[40px] sm:leading-[40px]  xl:text-[70px] xl:leading-[70px] tracking-wider pb-2">
+        <h1 className=" font-semibold text-[30px] leading-[30px] sm:text-[40px] sm:leading-[40px]  xl:text-[70px] xl:leading-[70px] tracking-wider pb-2">
           Thanks {lastAssignment.name} <br />
           for your assignment
         </h1>
