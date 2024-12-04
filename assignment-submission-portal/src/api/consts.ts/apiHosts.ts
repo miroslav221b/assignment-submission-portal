@@ -7,7 +7,9 @@ class ApiHosts {
   }
 
   private throwError(variableName: string) {
-    throw new Error(`Environment variable ${variableName} is not set.`);
+    throw new Error(
+      `Environment variable ${variableName} is not set. current env ${process.env}`
+    );
     return "";
   }
 }
